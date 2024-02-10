@@ -1,0 +1,1 @@
+bucket_name = "volodymyrs-312-school"
