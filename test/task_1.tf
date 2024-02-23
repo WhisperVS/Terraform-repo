@@ -42,7 +42,7 @@ resource "aws_subnet" "subnet" {
   cidr_block = each.value
 
   tags = {
-    name = each.key
+    Name = each.key
   }
 }
 
@@ -81,7 +81,7 @@ resource "aws_instance" "my_ec2" {
   ami                         = var.ami
   instance_type               = "t2.micro"
   vpc_security_group_ids      = [aws_security_group.my_sg.id]
-  subnet_id                   = aws_subnet.subnet["sub_1"].id
+  subnet_id                   = aws_subnet.subnet["pub_sub_1"].id
   key_name                    = aws_key_pair.ssh_key.key_name
   associate_public_ip_address = true
 

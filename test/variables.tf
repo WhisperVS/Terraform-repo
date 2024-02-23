@@ -3,7 +3,7 @@ variable "subnets" {
 }
 ######################## SUBNET VARS #############################
 variable "subnets_to_associate" {
-  default = ["sub_1", "sub_2", "sub_3"]
+  default = ["pub_sub_1", "pub_sub_2", "pub_sub_3"]
 }
 ####################### SG PORTS VARS  ######################
 variable "ingress_ports" {
